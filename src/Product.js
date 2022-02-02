@@ -8,13 +8,17 @@ function Product({ title, image, price, rating }) {
                 <p>{title}</p>
                 <p className="product_price">
                     <small>$</small>
-                    <strong>19.99</strong>
+                    <strong>{price}</strong>
                 </p>
                 <div className="product_rating">
-                    <p>⭐</p>
+                    {Array(rating)
+                    .fill()
+                    .map((_,i)=> (
+                        <p>⭐</p>
+                    ))}
                 </div>
             </div>
-            <img src="https://images-na.ssl-images-amazon.com/images/I/81-QB7nDh4L.jpg" />
+            <img src={image} alt=""/>
             <button>Add to Basket</button>
         </div>
     )
