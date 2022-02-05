@@ -8,7 +8,7 @@ import ShoppingBasketIcon from '@mui/icons-material/ShoppingBasket';
 function Header() {
     return (
         <div className='header'>
-            <img className="header_logo" src="https://png2png.com/wp-content/uploads/2021/08/images-9.png"/>
+            <img className="header_logo" src="https://png2png.com/wp-content/uploads/2021/08/images-9.png" alt=""/>
             <div className="header_search">
                 <input className="header_searchInput" type="text" />
                 <SearchIcon className="header_searchIcon" />
